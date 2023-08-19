@@ -101,7 +101,7 @@
 }
 
 .close{
-    @media screen and (min-width: 796px){
+    @media screen and (min-width: 600px){
         display: none;
         color: aqua;
         
