@@ -1,0 +1,109 @@
+/* Sidenav menu */
+.sidenav {
+    display: inline;
+    @media screen  and (max-width: 796px){
+        height: 100%;
+        width: 500px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -500px;
+        background-color: #e8e8e8;
+        padding-top: 60px;
+        transition: left 0.5s ease; 
+         
+         
+    }
+
+
+  }
+
+  /* Sidenav menu links */
+  .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+  }
+  img{
+    width: 50px;
+    height: 50px;
+  }
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    top: 0px;
+    margin: 0;
+    @media screen  and (max-width: 796px){
+        flex-direction: column;
+        align-items: normal;
+    }
+
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    display: none;
+    @media screen  and (max-width: 796px){
+        position: absolute;
+        top: 0;
+        display: block;
+        right: 25px;
+        font-size: 36px;
+    }
+   
+  }
+  .navbar{
+    align-items: center;
+    display: flex; 
+    width: 100%;   
+    justify-content: space-between;
+  }
+  .navbar img{
+    @media screen  and (min-width: 796px){
+        display: none;
+         
+         
+    }
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+#openBtn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    @media screen  and (min-width: 796px){
+        display: none;
+         
+         
+     }
+}
+
+.close{
+    @media screen and (min-width=796px){
+        display: none;
+        color: aqua;
+        
+    }
+}
