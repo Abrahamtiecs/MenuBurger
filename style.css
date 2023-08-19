@@ -58,11 +58,11 @@
   /* Close btn */
   .sidenav .close {
     display: none;
-    @media screen  and (max-width: 796px){
+    @media screen  and (max-width: 700px){
         position: absolute;
         top: 0;
         display: block;
-        right: 25px;
+        right: 60px;
         font-size: 36px;
     }
    
@@ -100,10 +100,3 @@
      }
 }
 
-.close{
-    @media screen and (min-width: 600px){
-        display: none;
-        color: aqua;
-        
-    }
-}
